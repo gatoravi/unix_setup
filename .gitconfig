@@ -1,0 +1,25 @@
+[user]
+    name = Avinash Ramu
+    email = aramu@genome.wustl.edu 
+[color]
+    status = auto
+    diff = auto 
+    branch = auto
+    interactive = auto
+[url "git@github.com:"]
+    insteadOf = "git://github.com/"
+[url "git@github.com:"]
+    insteadOf = "https://github.com/"
+[merge]
+    renameLimit = 10000
+	tool = vimdiff
+[core]
+  preloadindex = 1
+	pager = less -r
+	editor = vim
+	excludesfile = /gscuser/aramu/.gitignore
+[receive]
+  denyNonFastForwards = 0
+
+[push]
+#	default = simple
