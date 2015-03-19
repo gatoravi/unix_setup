@@ -88,16 +88,16 @@ set expandtab
 set smarttab
 
 " Set the number of spaces to use for indent and unindent.
-set shiftwidth=2
+set shiftwidth=4
 
 " Round indent to a multiple of 'shiftwidth'.
 set shiftround
 
 " Set the visible width of tabs.
-set tabstop=2
+set tabstop=4
 
-" Edit as if tabs are 2 characters wide.
-set softtabstop=2
+" Edit as if tabs are 4 characters wide.
+set softtabstop=4
 
 " Ignore case for pattern matches (use \C to override).
 set ignorecase
@@ -125,6 +125,7 @@ set nolist
 
 " What to show when 'list' is on.
 set listchars=tab:þ¬,trail:·,extends:§,precedes:§
+set list
 
 " Characters that form pairs, for use with % and the 'showmatch' option.
 set matchpairs=(:),[:],{:},<:>
@@ -579,7 +580,7 @@ runtime set_abbreviations.vim
 "nnoremap <esc> :noh<return><esc>
 
 "highlight columns above 80
-:au BufWinEnter * let w:m1=matchadd('Search', '\%<81v.\%>77v', -1)
-:au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%>80v.\+', -1)
+":au BufWinEnter * let w:m1=matchadd('Search', '\%<81v.\%>77v', -1)
+":au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%>80v.\+', -1)
 
 " end _vimrc
