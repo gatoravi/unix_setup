@@ -45,6 +45,7 @@ fi
 
 alias rm='rm -i'
 alias mv='mv -i'
+alias ll='ls -lt'
 
 export PAGER=less
 #export LESS=-eiMXR
