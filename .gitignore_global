@@ -1,4 +1,6 @@
 # My fork is here - https://gist.github.com/gatoravi/14ef4310e66d6b620f2b
+# To enable this file, place it under home and run
+#   - "git config --global core.excludesfile ~/.gitignore_global"
 # Compiled source #
 ###################
 *.com
