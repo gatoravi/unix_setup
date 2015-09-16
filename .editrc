@@ -1,0 +1,3 @@
+#On OSX this helps with getting Vi mode in the Python interpreter.
+#`man editrc` for more info
+bind -v
