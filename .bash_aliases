@@ -24,7 +24,7 @@ if [ "$PS1" ]; then             # interactive shell
     #export PS1='[\u@\h \W$(__git_ps1 " (%s)")]\$ '
     export PS1=$RED'\u@\h '$BROWN'\w$(__git_ps1 " (%s)")>'$NONE" "
 
-    # this one uses the git status directly
+    #this one uses the git status directly
     #export PS1=$RED'\u@\h '$BROWN'\w'$CYAN'$(__git_ps1 " (%s)")'$BROWN'>'$NONE" "
 
     # this does not, but uses a gmt shell script to mix git status and ci status
@@ -46,7 +46,7 @@ fi
 
 alias rm='rm -i'
 alias mv='mv -i'
-alias ll='ls -lt'
+alias ll='ls -Flth'
 
 export PAGER=less
 #export LESS=-eiMXR
