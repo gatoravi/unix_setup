@@ -35,6 +35,7 @@ fi
 if [ `uname` = "Darwin" ]; then
     echo init paths...
     export CLICOLOR=1
+    export CLICOLOR_FORCE=1
     export PATH=$HOME/bin:/opt/local/bin:/opt/local/sbin:$PATH
     export MANPATH=/opt/local/share/man:$MANPATH
 else
@@ -69,7 +70,6 @@ alias tt='test-tracker'
 
 alias srq='ur list objects --subject-class-name=Genome::SoftwareResult'
 alias bsub='bsub -u aramu@genome.wustl.edu'
-#export PERL5LIB=/gscmnt/sata845/info/ibwa-test/ssmith/gaug31/lib/perl/:$PERL5LIB
 
 #if [ `uname` = "Darwin" ]; then
 #    MYTIME=$(ls -l $(readlink $HOME/.bash_alias*) | awk '{ print $6 "-" $7 "-" $8 }')
@@ -87,7 +87,6 @@ alias bs='genome model build start'
 alias ml='genome model list'
 alias bl='genome model build list'
 alias ba='genome model build abandon'
-
 
 #Vim related
 alias vim='vim -O'
