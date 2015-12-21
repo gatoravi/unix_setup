@@ -246,6 +246,9 @@ if has("autocmd")
   " Use perldoc as the keyword-lookup program when editing Perl files.
   autocmd FileType perl setlocal keywordprg=perldoc
 
+  " Use .md files as Markdown
+  autocmd BufNewFile,BufReadPost *.md set filetype=markdown
+
   " When editing a file, always jump to the last known cursor position.
   " Don't do it when the position is invalid or when inside an event handler
   " (happens when dropping a file on gvim).
@@ -587,6 +590,7 @@ imap <expr> <S-Tab> InsertMatchingSpaces()
 "
 
 runtime set_abbreviations.vim
+
 
 " use escape to clear match highlighting
 "nnoremap <esc> :noh<return><esc>
