@@ -2,9 +2,21 @@
 "
 " Settings for both terminal and GUI Vim sessions.
 " (See _gvimrc for GUI-specific settings.)
-"
-" Last modified Thu Jan 29 09:28:58 2009
-" 
+
+set nocompatible              " be iMproved, required
+filetype off                  " required
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+"let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+
+"Go syntax highlightin
+Plugin 'fatih/vim-go'
+
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
 
 " firefox style tab navigation
 :nmap <S-tab> :tabn<CR>
