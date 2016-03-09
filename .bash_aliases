@@ -38,6 +38,7 @@ if [ `uname` = "Darwin" ]; then
     export CLICOLOR_FORCE=1
     export PATH=$HOME/bin:/opt/local/bin:/opt/local/sbin:$PATH
     export MANPATH=/opt/local/share/man:$MANPATH
+    alias zcat="zcat <"
 else
     export PATH=$HOME/bin:$PATH
     alias ls="ls -lht --color"
