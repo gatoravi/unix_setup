@@ -22,7 +22,7 @@ if [ "$PS1" ]; then             # interactive shell
     NONE="\[\e[m\]"
     export PS1R="${RED}\u@\h ${BROWN}\w>${NONE} "
     #export PS1='[\u@\h \W$(__git_ps1 " (%s)")]\$ '
-    export PS1=$RED'\u@\h '$BROWN'\w$(__git_ps1 " (%s)")>'$NONE" "
+    export PS1=$GRAY'\u@\h '$CYAN'\w$(__git_ps1 " (%s)")>'$NONE"\n "
 
     #this one uses the git status directly
     #export PS1=$RED'\u@\h '$BROWN'\w'$CYAN'$(__git_ps1 " (%s)")'$BROWN'>'$NONE" "
@@ -52,8 +52,6 @@ alias ll='ls -Flth'
 export PAGER=less
 #export LESS=-eiMXR
 export LESS=-iMR
-
-#export MYGPGKEY=76F33695
 
 export NONPRINT='--color="auto" -P -n "[\x80-\xFF]"' 
 
@@ -91,3 +89,4 @@ alias ba='genome model build abandon'
 
 #Vim related
 alias vim='vim -O'
+export MYGPGKEY=B12B28AA
