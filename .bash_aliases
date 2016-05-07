@@ -4,6 +4,7 @@ export IGNOREEOF=99999999
 alias cd="pushd >/dev/null";
 alias bd="popd >/dev/null";
 alias emacs="emacs -nw";
+alias "gitlol"="git log --graph --oneline --decorate"
 set -o noclobber
 set completion-ignore-case On
 umask 002
