@@ -14,6 +14,9 @@ Plugin 'VundleVim/Vundle.vim'
 "Go syntax highlightin
 Plugin 'fatih/vim-go'
 
+"Vim markdown from https://github.com/tpope/vim-markdown
+Plugin 'tpope/vim-markdown'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
