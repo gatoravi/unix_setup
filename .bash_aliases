@@ -39,11 +39,15 @@ if [ `uname` = "Darwin" ]; then
     export CLICOLOR_FORCE=1
     export PATH=$HOME/bin:/opt/local/bin:/opt/local/sbin:$PATH
     export MANPATH=/opt/local/share/man:$MANPATH
+    #Use different color for directories - different variable for OSX
+    export LSCOLORS=fx
     alias zcat="zcat <"
 else
     export PATH=$HOME/bin:$PATH
     alias ls="ls -lht --color"
     alias sr='sqlrun --instance warehouse';
+    #Use different color for directories
+    LS_COLORS='di=0;33:'; export LS_COLORS
 fi
 
 alias rm='rm -i'
