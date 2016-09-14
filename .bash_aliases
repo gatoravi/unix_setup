@@ -70,10 +70,6 @@ alias td="tmux detach"
 alias tls="tmux ls"
 alias tk="tmux kill-session -t "
 alias t='test-tracker prove --git --lsf'
-alias tt='test-tracker'
-
-alias srq='ur list objects --subject-class-name=Genome::SoftwareResult'
-alias bsub='bsub -u aramu@genome.wustl.edu'
 
 #if [ `uname` = "Darwin" ]; then
 #    MYTIME=$(ls -l $(readlink $HOME/.bash_alias*) | awk '{ print $6 "-" $7 "-" $8 }')
@@ -82,15 +78,8 @@ alias bsub='bsub -u aramu@genome.wustl.edu'
 #fi
 #echo "env updated $MYTIME"
 
-alias sp='psql -h gms-postgres -d genome -U gms-user -c'
-
-#From Travis
-alias mybuilds="genome model build list --filter run_by=$USER --order-by=date_scheduled"
-alias bv='genome model build view'
-alias bs='genome model build start'
-alias ml='genome model list'
-alias bl='genome model build list'
-alias ba='genome model build abandon'
+#Helps watch aliases
+alias watch='watch '
 
 #Vim related
 alias vim='vim -O'
