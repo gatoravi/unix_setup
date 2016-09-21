@@ -1,4 +1,2 @@
-local({r <- getOption("repos")
-        r["CRAN"] <- "http://cran.r-project.org"
-        options(repos=r)
-})
+library(ggplot2)
+library(dplyr)
