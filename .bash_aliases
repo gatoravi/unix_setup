@@ -1,5 +1,3 @@
-#!/bin/bash
-
 export IGNOREEOF=99999999
 alias cd="pushd >/dev/null";
 alias bd="popd >/dev/null";
@@ -59,12 +57,9 @@ export PAGER=less
 export LESS=-iMR
 
 export NONPRINT='--color="auto" -P -n "[\x80-\xFF]"' 
-
-export PATH=/opt/vagrant/bin:$HOME/git/pres/bin/:$PATH;
-
 alias ib='cd /gscmnt/sata845/info/ibwa-test/ssmith'
 alias gs='git status'
-alias ta="tmux -S $HOME/mytmux attach"
+alias tm="tmux -S $HOME/mytmux attach -d"
 alias tn="tmux -S $HOME/mytmux new-session"
 alias td="tmux detach"
 alias tls="tmux ls"
@@ -83,4 +78,3 @@ alias watch='watch '
 
 #Vim related
 alias vim='vim -O'
-export MYGPGKEY=B12B28AA

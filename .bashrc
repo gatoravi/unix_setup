@@ -17,21 +17,6 @@ if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
 
-STAGING_DIR='/gscmnt/sata102/info/ftp-staging/pub/software/gms/'
-KEYID=ED6AC1CE
-MYGPGKEY=ED6AC1CE
-OBI_BOX=ogriffit@24.171.102.71
-MYDIR=/gscmnt/gc2607/mardiswilsonlab/aramu/
-SRCDIR=/gscmnt/gc2607/mardiswilsonlab/aramu/src/
-ZACHDIR=/gscmnt/sata132/techd/zskidmor
-MALACHIDIR=/gscmnt/sata132/techd/mgriffit/aml31/ion_torrent_validation/
-PYTHONPATH=/gscuser/aramu/lib/python
-CANCER_ANNOTATION_DB_DIR=/gsc/scripts/opt/genome/db/tgi/cancer-annotation/human/
-CLDIR=~/src/genome/lib/perl/Genome/Model/ClinSeq/Command/
-CLPAPER=/gscmnt/gc2607/mardiswilsonlab/aramu/Analysis/ClinseqPaper/figures/
-PICARD=/gsc/scripts/pkg/bio/picard/picard-tools-1.92/
-hs37=/gscmnt/sata420/info/model_data/2857786885/build102671028/all_sequences.fa
-PATH=/gscuser/aramu/src/bin:$PATH
 set -o vi
 
 #From: http://alexteichman.com/octo/blog/2014/01/01/x11-forwarding-and-terminal-multiplexers/
