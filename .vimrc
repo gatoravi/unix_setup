@@ -11,6 +11,9 @@ call vundle#begin()
 "let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 
+"nextflow plugin
+Plugin 'LukeGoodsell/nextflow-vim'
+
 "Go syntax highlightin
 Plugin 'fatih/vim-go'
 
